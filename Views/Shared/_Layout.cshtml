@@ -5,24 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - SchoolIT</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3 mt-5">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">SchoolIT</a>
+                <a class="navbar-brand logo-main" asp-area="" asp-controller="Home" asp-action="Index">
+                    <svg width="88" height="87" viewBox="0 0 88 87" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.95706 58.5L42 3L74.0429 58.5H9.95706Z" stroke="#0F375A" stroke-width="3" />
+                        <path d="M38.144 46H40.664V33.436H38.144V38.602H32.762V33.436H30.242V46H32.762V40.654H38.144V46ZM42.4783 35.47H45.8263V46H48.3463V35.47H51.6943V33.436H42.4783V35.47Z" fill="#0F375A" />
+                        <path d="M83.2225 30.2094C83.3381 29.6693 82.9941 29.1378 82.454 29.0222L73.6535 27.1379C73.1135 27.0222 72.5819 27.3663 72.4663 27.9063C72.3507 28.4464 72.6947 28.9779 73.2348 29.0935L81.0575 30.7685L79.3825 38.5912C79.2669 39.1312 79.611 39.6627 80.151 39.7784C80.691 39.894 81.2226 39.5499 81.3382 39.0099L83.2225 30.2094ZM5.54339 80.8395L82.7881 30.8395L81.7013 29.1605L4.45661 79.1605L5.54339 80.8395Z" fill="#0F375A" />
+                    </svg>
+                </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                        <li class="nav-item mr-2">
+                            <a class="home-link nav-link text-capitalize" asp-area="" asp-controller="Home" asp-action="Index">about us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            <a class="home-link nav-link text-capitalize" asp-area="" asp-controller="Home" asp-action="Privacy">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                    <ul class="navbar-nav flex-grow-1 justify-content-end">
+                        <li class="nav-item mr-4 mb-2">
+                            <a class="home-link nav-link text-capitalize" asp-area="" asp-controller="Home" asp-action="Index">sign in</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="home-button nav-link text-capitalize pl-5 pr-5" asp-area="" asp-controller="Home" asp-action="Privacy">sign up</a>
                         </li>
                     </ul>
                 </div>
