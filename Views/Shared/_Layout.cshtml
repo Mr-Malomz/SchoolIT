@@ -11,8 +11,8 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light mb-3 mt-5">
-            <div class="container">
-                <a class="navbar-brand logo-main" asp-area="" asp-controller="Home" asp-action="Index">
+            <div class="container pl-lg-5 pr-lg-5">
+                <a class="navbar-brand logo-main pl-lg-4" asp-area="" asp-controller="Home" asp-action="Index">
                     <svg width="88" height="87" viewBox="0 0 88 87" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M9.95706 58.5L42 3L74.0429 58.5H9.95706Z" stroke="#0F375A" stroke-width="3" />
                         <path d="M38.144 46H40.664V33.436H38.144V38.602H32.762V33.436H30.242V46H32.762V40.654H38.144V46ZM42.4783 35.47H45.8263V46H48.3463V35.47H51.6943V33.436H42.4783V35.47Z" fill="#0F375A" />
@@ -33,7 +33,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
+                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse pr-lg-4">
                     <ul class="navbar-nav flex-grow-1 justify-content-end">
                         <li class="nav-item mr-4 mb-2">
                             <a class="home-link nav-link text-capitalize" asp-area="" asp-controller="Home" asp-action="Index">sign in</a>
@@ -46,7 +46,7 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    <div class="">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>

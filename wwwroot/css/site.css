@@ -86,6 +86,7 @@ body {
 .home-button {
     color: #ffffff !important;
     background: #0F375A;
+    font-weight: 500;
     transition: all ease-in-out 0.1s
 }
 
@@ -93,10 +94,69 @@ body {
         background: #032644;
     }
 
+.home-container {
+    padding-left: 67px;
+    padding-right: 67px
+}
 
-@media (min-width: 450px) {
+.hero-color {
+    color: #0F375A !important;
+}
+
+.hero-button {
+    color: #ffffff !important;
+    background: #0F4D5A;
+    width: 238px;
+    font-weight: 500;
+    transition: all ease-in-out 0.1s
+}
+
+    .hero-button:hover {
+        background: #023C48;
+    }
+
+.hero-benefit {
+    background-image: url('../utils/svg/hero-svg.svg');
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 416px;
+}
+
+.hero-ben-list {
+    width: 80px;
+    height: 80px;
+}
+
+.hero-ben-color1 {
+    background: #E4E3BF
+}
+
+.hero-ben-color2 {
+    background: #C4E0DB
+}
+
+.hero-ben-color3 {
+    background: #EBDDDD
+}
+
+.hero-ben-txt {
+    opacity: 0.7;
+    font-size: 14px
+}
+
+@media (max-width: 750px) {
     .home-button, .home-link {
         display: inline-block
+    }
+
+    .home-container {
+        padding-left: 20px;
+        padding-right: 20px
+    }
+
+    .hero-image {
+        display: none
     }
 }
 
